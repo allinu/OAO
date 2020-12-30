@@ -1,5 +1,6 @@
 <template>
   <div class="ui container field red">
+    <!-- 导航栏 -->
     <MenuBarBase></MenuBarBase>
     <!-- NOTE 下面显示路由主体内容 -->
     <router-view />
