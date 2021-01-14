@@ -4,7 +4,6 @@
       <CustomLogo class="center aligned" />
       <br />
       <br />
-      <i class="nf nf-fa-heart 2x"></i>
       <h1>因为，我爱你</h1>
     </div>
   </div>
