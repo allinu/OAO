@@ -3,6 +3,7 @@ import "./plugins/fontawesome";
 import App from "./App.vue";
 import router from "./router";
 import "./assets/SmartisanCompactRegular/Smartisan_Compact-Regular.css";
+import "./assets/NerdFont/nerd-fonts-generated.css"
 
 Vue.config.productionTip = false;
 

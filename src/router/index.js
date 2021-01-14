@@ -1,14 +1,19 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home";
-import Login from "@/views/Login";
-import Registr from "@/views/Registr";
+import Diary from '@/views/Diary'
+import Event from '@/views/Event'
+import Gallery from '@/views/Gallery'
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
+    redirect: "/home",
+  },
+  {
+    path: "/home",
     name: "Home",
     component: Home,
     meta: {
@@ -16,25 +21,34 @@ const routes = [
     },
   },
   {
-    path: "/login",
-    name: "Login",
-    component: Login,
+    path: "/diary",
+    name: "Diary",
+    component: Diary,
     meta: {
-      title: "登录",
-    },
+      title: "日记"
+    }
   },
   {
-    path: "/registr",
-    name: "Registr",
-    component: Registr,
+    path: "/event",
+    name: "Event",
+    component: Event,
     meta: {
-      title: "注册",
-    },
+      title: "事件",
+    }
   },
+  {
+    path: "/gallery",
+    name: "Gallery",
+    component: Gallery,
+    meta: {
+      title: "相册",
+    }
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
+  linkActiveClass: "active",
   routes: routes,
 });
 

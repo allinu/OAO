@@ -1,18 +1,24 @@
 <template>
   <div class="ui container">
-    <CustomLogo />
+    <div class="main">
+      <CustomLogo class="center aligned" />
+      <br />
+      <br />
+      <i class="nf nf-fa-heart 2x"></i>
+      <h1>因为，我爱你</h1>
+    </div>
   </div>
 </template>
 
 <script>
-import CustomLogo from "@/components/CustomLogo";
+import CustomLogo from '@/components/CustomLogo'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     CustomLogo,
   },
-};
+}
 </script>
 
 <style scoped>
@@ -39,5 +45,15 @@ export default {
 .btn_text {
   font-size: 30px;
   letter-spacing: 10px;
+}
+.main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-radius: 10px;
+  /* background: rgb(122, 122, 122); */
+  text-align: center;
+}
+i {
+  font-size: 2rem;
 }
 </style>

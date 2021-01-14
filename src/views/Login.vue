@@ -3,27 +3,27 @@
 </template>
 
 <script>
-import anime from "animejs/lib/anime.es.js";
+import anime from 'animejs/lib/anime.es.js'
 
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
-    return {};
+    return {}
   },
   mounted() {
     anime({
-      targets: ".moved",
+      targets: '.moved',
       translateX: 50,
-      direction: "alternate",
+      direction: 'alternate',
       autoplay: true,
       loop: true,
-      easing: "easeInOutSine",
-    });
+      easing: 'easeInOutSine',
+    })
   },
   components: {
     // CustomLogo
   },
-};
+}
 </script>
 
 <style lang="css" scoped>
