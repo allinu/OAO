@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h2>Gallery</h2>
-    </div>
+  <div class="ui container">
+    <h2>Gallery</h2>
+  </div>
 </template>
 <script>
 export default {

@@ -1,9 +1,10 @@
 <template>
-  <div class="ui container field red">
+  <div class="ui attached">
     <!-- NOTE 导航栏 -->
     <MenuBarBase></MenuBarBase>
     <!-- NOTE 下面显示路由主体内容 -->
     <router-view />
+    <!-- NOTE 下面显示页脚 -->
     <Footer></Footer>
   </div>
 </template>

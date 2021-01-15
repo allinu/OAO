@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ui container">
     <h2>Diary</h2>
   </div>
 </template>

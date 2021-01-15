@@ -1,5 +1,5 @@
 <template>
-  <div class="ui secondary pointing big menu">
+  <div class="ui container secondary pointing big menu">
     <!-- NOTE 左边的logo -->
     <router-link class="item" to="/home">
       <slot name="logo">
