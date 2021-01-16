@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <script>
+      // 这段代码要放在其他js的前面
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="<%= BASE_URL %>semantic/semantic.min.css" />
     <script src="<%= BASE_URL %>js/jquery.min.js"></script>
     <link rel="stylesheet" href="<%= BASE_URL %>semantic/semantic.min.js" />
