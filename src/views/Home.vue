@@ -55,7 +55,7 @@ export default {
       msg: '',
       days: now_time.diff(start_time, 'days'),
       throttleGap: 4000,
-      lanesCount: 16,
+      lanesCount: 14,
       messageHeight: 37,
       barrageIsShow: true,
       currentId: 0,
@@ -111,22 +111,27 @@ export default {
 .logo {
   text-align: center;
   position: absolute;
-  /* top: 50%; */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .main {
-  padding-top: 120px;
+  padding-top: 180px;
   padding-bottom: 120px;
-  border-radius: 10px;
   text-align: center;
   text-align: center;
   position: relative;
+  height: 600px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
+  /* background: black; */
 }
 .main > h1 {
   margin-top: 50px;
+}
+.baberrage-stage {
+  padding-top: 10px;
+  height: 600px;
 }
 </style>
