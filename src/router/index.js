@@ -10,10 +10,10 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "/home",
+    redirect: "/OAO/home",
   },
   {
-    path: "/home",
+    path: "/OAO/home",
     name: "Home",
     component: Home,
     meta: {
@@ -21,7 +21,7 @@ const routes = [
     },
   },
   {
-    path: "/diary",
+    path: "/OAO/diary",
     name: "Diary",
     component: Diary,
     meta: {
@@ -29,7 +29,7 @@ const routes = [
     }
   },
   {
-    path: "/event",
+    path: "/OAO/event",
     name: "Event",
     component: Event,
     meta: {
@@ -37,7 +37,7 @@ const routes = [
     }
   },
   {
-    path: "/gallery",
+    path: "/OAO/gallery",
     name: "Gallery",
     component: Gallery,
     meta: {

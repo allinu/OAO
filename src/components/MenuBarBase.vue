@@ -1,7 +1,7 @@
 <template>
   <div class="ui container secondary pointing big menu">
     <!-- NOTE 左边的logo -->
-    <router-link class="item" to="/home">
+    <router-link class="item" to="/OAO/home">
       <slot name="logo">
         <font-awesome-icon icon="circle-notch"></font-awesome-icon>
         <font-awesome-icon
@@ -14,9 +14,9 @@
         <font-awesome-icon icon="circle-notch"></font-awesome-icon>
       </slot>
     </router-link>
-    <router-link class="item" to="/diary">日 记</router-link>
-    <router-link class="item" to="/event">事 件</router-link>
-    <router-link class="item" to="/gallery">相 册</router-link>
+    <router-link class="item" to="/OAO/diary">日 记</router-link>
+    <router-link class="item" to="/OAO/event">事 件</router-link>
+    <router-link class="item" to="/OAO/gallery">相 册</router-link>
     <div class="right menu">
       <!-- NOTE 右边的菜单 -->
       <slot name="right_menu">
