@@ -20,7 +20,7 @@
 
     <div class="main">
       <CustomLogo class="logo" />
-      <h1 class="fw-bold">再敲一行代码</h1>
+      <h1 class="fw-bold">因为爱，为了爱</h1>
     </div>
   </div>
 </template>
