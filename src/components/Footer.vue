@@ -1,34 +1,16 @@
 <template>
-  <div class="ui footer container">
-    <div class="ui horizontal divider">
-      <slot name="logo">
-        <font-awesome-icon icon="circle-notch"></font-awesome-icon>
-        <font-awesome-icon
-          icon="heart"
-          id="heart"
-          color="red"
-          class="looping animating transition pulse"
+  <div class="container">
+    <hr />
+    <div class="d-flex justify-content-between bd-highlight mb-3">
+      <span class="badge"
+        >联系我：
+        <a
+          href="mailto:lionacc@163.com"
+          class="text-reset text-decoration-none light"
+          >{{ author_mail }}</a
         >
-        </font-awesome-icon>
-        <font-awesome-icon icon="circle-notch"></font-awesome-icon>
-      </slot>
-    </div>
-    <div class="ui aligned equal width grid">
-      <div class="column left floated">
-        <div class="ui label">
-          联系我们：
-          <a href="mailto:lionacc@163.com">
-            <i class="mail icon"></i>
-            lionacc@163.com
-          </a>
-        </div>
-      </div>
-      <div class="column center aligned">
-        <div class="ui label primary">我们在一起 {{ seconds }} 秒了</div>
-      </div>
-      <div class="column right floated right aligned">
-        <div class="ui label">版本：{{ version }}</div>
-      </div>
+      </span>
+      <span class="badge">版本：{{ version }}</span>
     </div>
   </div>
 </template>
@@ -43,30 +25,19 @@ export default {
     return {
       version: '1.0.0',
       seconds: '',
+      author_mail: 'lionacc@163.com',
     }
   },
-  methods: {
-    flash_time() {
-      let start_time = moment('20201105')
-      var now_time = moment()
-      this.seconds = now_time.diff(start_time, 'seconds')
-    },
-  },
-  mounted() {
-    let that = this
-    that.flash_time()
-    setInterval(function () {
-      that.flash_time()
-    }, 1000)
-  },
+  methods: {},
 }
 </script>
 <style scoped>
-.footer {
-  font-family: 'SCR';
-  padding-top: 30px;
+.container {
+  padding: 10px 10px;
 }
-#heart {
-  animation-duration: 1000ms;
+.badge {
+  font-family: 'SCR';
+  background: #f1e9db;
+  color: #2d2e2e;
 }
 </style>

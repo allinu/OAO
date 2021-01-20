@@ -23,9 +23,9 @@ export default {
 
 <style>
 * {
-  font-family: 'SCR', serif;
+  font-family: 'SCM', 'NFR';
 }
 text {
-  font-family: 'SCR', serif;
+  font-family: 'SCM', 'NFR';
 }
 </style>

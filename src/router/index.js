@@ -1,24 +1,24 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home";
-import Diary from '@/views/Diary'
-import Event from '@/views/Event'
-import Gallery from '@/views/Gallery'
+import Diary from "@/views/Diary";
+import Event from "@/views/Event";
+import Gallery from "@/views/Gallery";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/OAO",
-    redirect: "/OAO/home",
+    redirect: "/OAO/home"
   },
   {
     path: "/OAO/home",
     name: "Home",
     component: Home,
     meta: {
-      title: "首页",
-    },
+      title: "首页"
+    }
   },
   {
     path: "/OAO/diary",
@@ -33,7 +33,7 @@ const routes = [
     name: "Event",
     component: Event,
     meta: {
-      title: "事件",
+      title: "事件"
     }
   },
   {
@@ -41,7 +41,7 @@ const routes = [
     name: "Gallery",
     component: Gallery,
     meta: {
-      title: "相册",
+      title: "相册"
     }
   }
 ];
@@ -49,7 +49,7 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   linkActiveClass: "active",
-  routes: routes,
+  routes: routes
 });
 
 router.beforeEach((to, from, next) => {

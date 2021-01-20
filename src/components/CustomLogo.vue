@@ -1,24 +1,8 @@
 <template>
-  <div class="ui container">
-    <h1 class="ui header">
-      <font-awesome-icon
-        icon="circle-notch"
-        size="4x"
-        :color="circleColor"
-      ></font-awesome-icon>
-      <font-awesome-icon
-        icon="heart"
-        size="4x"
-        id="heart"
-        :color="heartColor"
-        class="looping animating transition pulse"
-      ></font-awesome-icon>
-      <font-awesome-icon
-        icon="circle-notch"
-        size="4x"
-        :color="circleColor"
-      ></font-awesome-icon>
-    </h1>
+  <div id="logo">
+    <i class="nf nf-fa-circle_o_notch"></i>
+    <i class="nf nf-fa-heart"></i>
+    <i class="nf nf-fa-circle_o_notch"></i>
   </div>
 </template>
 
@@ -35,7 +19,10 @@ export default {
 </script>
 
 <style scoped>
-#heart {
-  animation-duration: 1000ms;
+#logo {
+  letter-spacing: 0.45em;
+}
+#logo .nf.nf-fa-heart {
+  color: red;
 }
 </style>

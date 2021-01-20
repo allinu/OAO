@@ -1,59 +1,69 @@
 <template>
-  <div class="ui container secondary pointing big menu">
-    <!-- NOTE 左边的logo -->
-    <router-link class="item" to="/OAO/home">
-      <slot name="logo">
-        <font-awesome-icon icon="circle-notch"></font-awesome-icon>
-        <font-awesome-icon
-          icon="heart"
-          id="heart"
-          color="red"
-          class="looping animating transition pulse"
-        >
-        </font-awesome-icon>
-        <font-awesome-icon icon="circle-notch"></font-awesome-icon>
-      </slot>
-    </router-link>
-    <router-link class="item" to="/OAO/diary">日 记</router-link>
-    <router-link class="item" to="/OAO/event">事 件</router-link>
-    <router-link class="item" to="/OAO/gallery">相 册</router-link>
-    <div class="right menu">
-      <!-- NOTE 右边的菜单 -->
-      <slot name="right_menu">
-        <router-link class="item compact" to="/prefrence">
-          <i class="icon setting"></i>
-        </router-link>
-        <router-link class="item compact" to="/prefrence">
-          <i class="icon bell"></i>
-        </router-link>
-        <router-link class="item compact" to="/prefrence">
-          <i class="icon sign out"></i>
-        </router-link>
-      </slot>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- NOTE LOGO -->
+      <router-link class="navbar-brand" to="/OAO/home">
+        <slot name="nav_logo">
+          <i class="nf nf-fa-circle_o_notch"></i>
+          <i class="nf nf-fa-heart"></i>
+          <i class="nf nf-fa-circle_o_notch"></i>
+        </slot>
+      </router-link>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <router-link class="nav-link fw-bold" to="/OAO/diary"
+              >日 记</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fw-bold" to="/OAO/event"
+              >事 件</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fw-bold" to="/OAO/gallery"
+              >相 册</router-link
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: 'MemuBarBase',
-}
+  name: "MemuBarBase"
+};
 </script>
 
 <style scoped>
-.ui.secondary.pointing.menu {
-  border-bottom: none;
+.navbar-brand {
+  letter-spacing: 9px;
 }
-
-#heart {
-  animation-duration: 1000ms;
+.nf.nf-fa-heart {
+  color: #de1a1a;
 }
-
-a {
-  text-decoration: none;
+.navbar-brand,
+.nav-item {
+  padding-right: 20px;
+}
+.navbar-nav a.nav-link {
   color: black;
 }
-a:hover {
-  text-decoration: underline;
+.navbar-nav a.nav-link.active {
+  color: red;
 }
 </style>

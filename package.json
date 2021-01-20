@@ -5,22 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build_fomantic": "cd semantic && gulp build"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
     "@fortawesome/free-solid-svg-icons": "^5.15.0",
     "@fortawesome/vue-fontawesome": "^2.0.0",
-    "animate.css": "^4.1.1",
-    "animejs": "^3.2.1",
     "axios": "^0.21.1",
+    "bootstrap": "^5.0.0-beta1",
     "core-js": "^3.6.5",
-    "fomantic-ui": "^2.8.7",
-    "jquery": "^3.5.1",
     "moment": "^2.29.1",
     "vue": "^2.6.11",
     "vue-baberrage": "^3.2.4",
+    "vue-ctk-date-time-picker": "^2.5.0",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
@@ -31,7 +28,6 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "gulp": "^4.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
