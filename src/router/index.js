@@ -4,6 +4,7 @@ import Home from "@/views/Home";
 import Diary from "@/views/Diary";
 import Event from "@/views/Event";
 import Gallery from "@/views/Gallery";
+import Love from "@/views/Love"
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,14 @@ const routes = [
     component: Gallery,
     meta: {
       title: "相册"
+    }
+  },
+  {
+    path: "/OAO/love",
+    name: "Love",
+    component: Love,
+    meta: {
+      title: "爱你 ✌️❤️"
     }
   }
 ];

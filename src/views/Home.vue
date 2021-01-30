@@ -42,7 +42,7 @@ let url =
 export default {
   name: "Home",
   components: {
-    CustomLogo
+    CustomLogo,
   },
   data() {
     return {
@@ -70,13 +70,13 @@ export default {
         "blue",
         "violet",
         "purple",
-        "pink"
-      ]
+        "pink",
+      ],
     };
   },
   methods: {
     addToList() {
-      axios.get(url).then(response => {
+      axios.get(url).then((response) => {
         for (let index = 0; index < 15; index++) {
           this.barrageList.push({
             id: ++this.currentId,
@@ -86,22 +86,22 @@ export default {
             // NOTE 这里可以实现变化颜色
             // color: this.colorList[index % 10],
             color: "",
-            type: MESSAGE_TYPE.NORMAL
+            type: MESSAGE_TYPE.NORMAL,
             // username: response.data['from_who']
             //   ? response.data['from_who']
             //   : 'Hitokoto',
           });
         }
       });
-    }
+    },
   },
   mounted() {
     let that = this;
     that.addToList();
-    setInterval(function() {
+    setInterval(function () {
       that.addToList();
     }, 10000);
-  }
+  },
 };
 </script>
 

@@ -39,3 +39,28 @@
   src: url("./fonts/Fira\ Code\ Bold\ Nerd\ Font\ Complete.ttf")
     format("truetype");
 }
+@font-face {
+  font-family: "YRDR";
+  src: url("./fonts/YangRenDongZhuShiTi-Regular-2.ttf")
+  format("truetype");
+}
+@font-face {
+  font-family: "YRDM";
+  src: url("./fonts/YangRenDongZhuShiTi-Medium-2.ttf")
+  format("truetype");
+}
+@font-face {
+  font-family: "YRDB";
+  src: url("./fonts/YangRenDongZhuShiTi-Bold-2.ttf")
+  format("truetype");
+}
+@font-face {
+  font-family: "YRDH";
+  src: url("./fonts/YangRenDongZhuShiTi-Heavy-2.ttf")
+  format("truetype");
+}
+@font-face {
+  font-family: "YRDE";
+  src: url("./fonts/YangRenDongZhuShiTi-Extralight-2.ttf")
+  format("truetype");
+}
