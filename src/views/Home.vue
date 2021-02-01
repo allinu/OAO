@@ -20,7 +20,7 @@
 
     <div class="main">
       <CustomLogo class="logo" />
-      <h1 class="fw-bold">因为爱，为了爱</h1>
+      <h6>{{ main_msg }}</h6>
     </div>
   </div>
 </template>
@@ -50,6 +50,7 @@ export default {
       now_time,
       words: "",
       msg: "",
+      main_msg: "",
       days: now_time.diff(start_time, "days"),
       throttleGap: 4000,
       lanesCount: 15,

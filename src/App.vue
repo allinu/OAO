@@ -10,22 +10,36 @@
 </template>
 
 <script>
-import MenuBarBase from '@/components/MenuBarBase'
-import Footer from '@/components/Footer'
+import MenuBarBase from "@/components/MenuBarBase";
+import Footer from "@/components/Footer";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     MenuBarBase,
     Footer,
   },
-}
+};
 </script>
 
 <style>
 * {
-  font-family: 'SCM', 'NFR';
+  font-family: "NFM", "SCM";
 }
-text {
-  font-family: 'SCM', 'NFR';
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+.colorful {
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #fff, #fbb);
+  animation: hue 6s linear infinite;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 </style>
