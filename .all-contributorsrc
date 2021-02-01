@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "allinu",
+      "name": "Allinu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32992109?v=4",
+      "profile": "https://allinu.github.io/",
+      "contributions": [
+        "infra",
+        "test",
+        "design",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "OAO",
+  "projectOwner": "allinu",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
