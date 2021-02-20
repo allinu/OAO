@@ -5,11 +5,11 @@
       <div class="heart right"></div>
       <div class="heart bottom"></div>
     </div>
-    <div id="c" onclick='window.location.href="https://allinu.github.io/OAO/";'>
-      <H2>CLP</H2>
-    </div>
     <div id="l">
-      <H2>LY</H2>
+      <H2>{{ male }}</H2>
+    </div>
+    <div id="r">
+      <H2>{{ female }}</H2>
     </div>
     <div id="con">
       <h1>字里行间，全都是你</h1>
@@ -20,6 +20,12 @@
 <script>
 export default {
   name: "Love",
+  data() {
+    return {
+      male: "CLP",
+      female: "LY"
+    };
+  }
 };
 </script>
 
@@ -84,13 +90,13 @@ export default {
   }
 }
 
-#c {
+#l {
   /*right: 60%;left: 40%;*/
   margin: -15% 30%;
   position: absolute;
   animation: a 0.8s ease infinite normal;
 }
-#l {
+#r {
   margin: -15% 67%;
   position: absolute;
   animation: a 0.8s ease infinite normal;

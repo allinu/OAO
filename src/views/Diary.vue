@@ -1,6 +1,8 @@
 <template>
   <div class="ui container">
-    <div class="main"></div>
+    <div class="main">
+      <h2>Diary</h2>
+    </div>
   </div>
 </template>
 <script>
@@ -10,7 +12,7 @@ export default {
     return {};
   },
   methods: {},
-  mounted() {},
+  mounted() {}
 };
 </script>
 

@@ -1,5 +1,4 @@
 import Vue from "vue";
-import "@/plugins/baberrage";
 import "@/plugins/bootstrap";
 import "@/plugins/setfont";
 import App from "./App.vue";

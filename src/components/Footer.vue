@@ -4,11 +4,9 @@
     <div class="d-flex justify-content-between bd-highlight mb-3">
       <span class="badge colorful"
         >联系我：
-        <a
-          href="mailto:lionacc@163.com"
-          class="text-reset text-decoration-none light"
-          >{{ author_mail }}</a
-        >
+        <a :href="mail_to" class="text-reset text-decoration-none light">{{
+          author_mail
+        }}</a>
       </span>
       <span class="badge colorful">版本：{{ version }}</span>
     </div>
@@ -25,10 +23,14 @@ export default {
     return {
       version: "1.0.0",
       seconds: "",
-      author_mail: "lionacc@163.com",
+      author_mail: "xxxxxx@xxx.com"
     };
   },
-  methods: {},
+  computed: {
+    mail_to: function() {
+      return "mailto:" + this.author_mail;
+    }
+  }
 };
 </script>
 <style scoped>

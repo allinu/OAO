@@ -4,9 +4,7 @@
       <!-- NOTE LOGO -->
       <router-link class="navbar-brand" to="/OAO/home">
         <slot name="nav_logo">
-          <i class="nf nf-fa-circle_o_notch"></i>
           <i class="nf nf-fa-heart"></i>
-          <i class="nf nf-fa-circle_o_notch"></i>
         </slot>
       </router-link>
       <button
