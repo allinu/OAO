@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/OAO/favicon.ico"><script>// 这段代码要放在其他js的前面
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();</script><title>oao</title><link href="/OAO/css/app.31aad930.css" rel="preload" as="style"><link href="/OAO/css/chunk-vendors.b69285b6.css" rel="preload" as="style"><link href="/OAO/js/app.42ce0e0a.js" rel="preload" as="script"><link href="/OAO/js/chunk-vendors.a227e5ba.js" rel="preload" as="script"><link href="/OAO/css/chunk-vendors.b69285b6.css" rel="stylesheet"><link href="/OAO/css/app.31aad930.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but oao doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/OAO/js/chunk-vendors.a227e5ba.js"></script><script src="/OAO/js/app.42ce0e0a.js"></script></body></html>
