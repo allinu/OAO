@@ -1,10 +1,9 @@
 <template>
     <div class=" w-screen h-screen flex flex-wrap items-center sm:px-20 md:px-10 px-0 sm:py-10 py-0">
-      <h2 class="text-2xl">待处理，准备实现一些有意思的功能</h2>
-        <div v-for="item in contents" :key="item.id"  class="relative border-green-900 border-2 border-dashed sm:w-1/3 md:w-1/4 w-full h-56 rounded-xl text-green-800s p-5 hover:bg-red-100 hover:border-pink-600 m-2">
+        <div v-for="item in contents" :key="item.id"  class="relative border-green-900 border-2 border-dashed sm:w-1/3 md:w-1/4 w-full h-56 rounded-md text-green-800s p-5 hover:bg-red-100 hover:border-pink-600 m-2">
             <h2 class="font-medium text-xl hover:text-red-700">
-                <a :href="item.url" class="">
-                   {{" "+item.title}}
+                <a :href="item.url" class="items-center justify-center card_title">
+                   {{item.title}}
                 </a>
             </h2>
             <p class="m-2 text-gray-500">
@@ -23,16 +22,20 @@ export default {
   data() {
     return {
       contents: [
-        // {
-        //   id: 1,
-        //   title: "签到/查寝",
-        //   url: "/automation/sign",
-        //   description: "今日校园的签到/查寝任务自动完成",
-        // },
+        {
+          id: 1,
+          title: " 签到/查寝",
+          url: "/automation/sign",
+          description: "今日校园的签到/查寝任务自动完成",
+        },
       ],
     };
   },
 };
 </script>
 <style lang="css" scoped>
+.card_title{
+  font-size: 1em;
+  line-height: 1em;
+}
 </style>

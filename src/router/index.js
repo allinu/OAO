@@ -29,6 +29,15 @@ const routes = [{
             import ('../views/Automation.vue')
     },
     {
+        path: '/automation/sign',
+        name: 'AutoSign',
+        meta: {
+            title: '自动化'
+        },
+        component: () =>
+            import ('../views/AutoSign.vue')
+    },
+    {
         path: '/love',
         name: 'Love',
         meta: {

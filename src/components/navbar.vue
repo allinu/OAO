@@ -32,6 +32,10 @@ export default {
           url: "https://blog.liona.fun/",
         },
         {
+          name: "打字",
+          url: "https://type.liona.fun/",
+        },
+        {
           name: "项目",
           url: "/projects",
         },
