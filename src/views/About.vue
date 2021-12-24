@@ -8,7 +8,7 @@
   
 </div>
 </template>
-<script>
+<script lang="ts">
 import Heart from "@/components/heart.vue";
 import BulletJs from "js-bullets";
 export default {
@@ -66,10 +66,10 @@ export default {
   height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-  z-index: -1;
+  z-index: 5;
 }
 .bullet-item-style {
-  background: rgb(21, 33, 88);
+  background:rgb(13, 4, 90);
   color: white;
 }
 </style>

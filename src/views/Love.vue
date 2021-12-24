@@ -3,7 +3,7 @@
     <Heart :size="w" class="mx-auto"></Heart>
   </div>
 </template>
-<script>
+<script lang="ts">
 import Heart from "@/components/heart.vue";
 export default {
   name: "Love",

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen sm:p-10 flex flex-wrap">
+    <div class="w-screen pt-16 pb-5 px-5 flex flex-wrap">
         <div v-for="project in projects" :key="project.id" class="m-2 border-2 border-dashed flex-grow w-64 h-64 p-5 rounded-xl relative hover:bg-red-50 hover:border-red-600">
             <a :href="project.html_url" target="_blank" class=" text-blue-700 text-xl ">{{project.name}}</a>
             <p class="mt-5 nb-5">{{ clip(project.description) }}</p>
@@ -10,7 +10,7 @@
         </div>
     </div>
 </template>
-<script>
+<script lang="ts">
 import axios from "axios";
 export default {
   name: "Projects",

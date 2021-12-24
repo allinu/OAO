@@ -7,7 +7,7 @@
     ></customlogo>
   </div>
 </template>
-<script>
+<script lang="ts">
 import axios from "axios";
 let url = "https://v1.hitokoto.cn/?c=j&c=h&c=e&c=d&c=i";
 import BulletJs from "js-bullets";

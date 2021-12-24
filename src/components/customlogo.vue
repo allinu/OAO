@@ -5,7 +5,7 @@
         <span :style="{fontSize: w, width: w, padding:'0 0 0 5px',position: relative}"></span>
     </div>
 </template>
-<script>
+<script lang="ts">
 import Heart from "@/components/heart.vue";
 export default {
   name: "Customlogo",
