@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview",
+        "preview": "vite preview"
     },
     "dependencies": {
         "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat@^2.2.17",
