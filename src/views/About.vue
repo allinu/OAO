@@ -1,9 +1,9 @@
 <template>
 <div class="w-screen h-screen">
-  <div id="danmu-screen"></div>
+  <div id="danmu-screen" class=""></div>
   <div class="pt-64">
     <Heart :size=w class="mx-auto"></Heart>
-    <h2 class="text-3xl text-center mt-10">Nothing but love.</h2>
+    <h2 class="sm:text-3xl text-xl text-center mt-10">Nothing but love.</h2>
   </div>
   
 </div>
@@ -125,5 +125,6 @@ export default {
 .bullet-item-style {
   background:rgb(13, 4, 90);
   color: white;
+  border:1px solid #fff;
 }
 </style>

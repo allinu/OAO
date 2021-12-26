@@ -1,6 +1,6 @@
 <template>
   <navbar id="navbar" class="w-full fixed z-10"></navbar>
-  <router-view id="main" class="h-full overflow-scroll"/>
+  <router-view id="main" class="h-full overflow-scroll bg-white dark:bg-black text-black dark:text-white"/>
 </template>
 
 <script lang="ts">

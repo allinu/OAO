@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen">
+  <div class="w-screen h-screen dark:bg-black dark:text-white bg-white">
     <div id="danmu-screen" class="w-screen h-screen"></div>
     <customlogo
       class="flex justify-center items-center relative top-64"
@@ -69,7 +69,7 @@ export default {
   },
   data() {
     return {
-      w: "10vw",
+      w: "80px",
       words: [],
       tmp: "",
     };
@@ -101,5 +101,10 @@ export default {
   height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
+}
+.bullet-item-style {
+  background:rgb(13, 4, 90);
+  color: white;
+  border:1px solid #fff;
 }
 </style>
