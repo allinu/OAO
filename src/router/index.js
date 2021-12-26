@@ -20,19 +20,19 @@ const routes = [{
             import ('../views/Projects.vue')
     },
     {
-        path: '/automation',
-        name: 'Automation',
+        path: '/tools',
+        name: 'Tools',
         meta: {
-            title: '自动化'
+            title: '工具'
         },
         component: () =>
-            import ('../views/Automation.vue')
+            import ('../views/Tools.vue')
     },
     {
-        path: '/automation/sign',
+        path: '/tools/sign',
         name: 'AutoSign',
         meta: {
-            title: '自动化'
+            title: '自动签到'
         },
         component: () =>
             import ('../views/AutoSign.vue')

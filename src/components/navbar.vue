@@ -36,16 +36,12 @@ export default {
           url: "https://blog.liona.fun/",
         },
         {
-          name: "打字",
-          url: "https://type.liona.fun/",
-        },
-        {
           name: "项目",
           url: "/projects",
         },
         {
-          name: "自动化",
-          url: "/automation",
+          name: "工具",
+          url: "/tools",
         },
         {
           name: "关于",
