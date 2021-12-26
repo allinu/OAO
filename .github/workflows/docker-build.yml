@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, dev]
   pull_request:
-    branches: [ main ]
+    branches: [ main, dev]
   workflow_dispatch:
 
 env:
@@ -19,16 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
-    - name: Use Node.js 16
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16
-        cache: 'yarn'
-        cache-dependency-path: yarn.lock
-    - run: |
-        yarn
-        yarn build
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag $IMAGE_NAME
     - name: Log into registry
@@ -46,6 +36,7 @@ jobs:
 
         # Use Docker `latest` tag convention
         [ "$VERSION" == "main" ] && VERSION=latest
+        [ "$VERSION" == "dev" ] && VERSION=dev
 
         echo VERSION=$VERSION
         # 设置镜像 id 和版本号
