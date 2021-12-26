@@ -1,10 +1,9 @@
 <template>
-  <navbar id="navbar"></navbar>
-  <router-view id="main" />
-  <foter></foter>
+  <navbar id="navbar" class="w-full fixed z-10"></navbar>
+  <router-view id="main" class="h-full overflow-scroll"/>
 </template>
 
-<script>
+<script lang="ts">
 import navbar from "@/components/navbar.vue";
 import foter from "@/components/vfooter.vue";
 

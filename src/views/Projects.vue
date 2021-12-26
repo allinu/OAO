@@ -1,16 +1,17 @@
 <template>
-    <div class="w-screen sm:p-10 flex flex-wrap">
-        <div v-for="project in projects" :key="project.id" class="m-2 border-2 border-dashed flex-grow w-64 h-64 p-5 rounded-xl relative hover:bg-red-50 hover:border-red-600">
-            <a :href="project.html_url" target="_blank" class=" text-blue-700 text-xl ">{{project.name}}</a>
+    <div class="w-screen pt-16 pb-5 px-5 grid grid-cols-4">
+        <a v-for="project in projects" :href="project.html_url" target="_blank" :key="project.id" class="m-2 duration-300 border-2 border-gray-900 flex-grow h-64 p-5 rounded-xl relative hover:bg-gray-900 hover:text-white">
+            <h2 class="text-xl font-bold">{{project.name}}</h2>
+            <hr class="border-2 border-green-600 my-4">
             <p class="mt-5 nb-5">{{ clip(project.description) }}</p>
             <div class="footer flex items-center absolute right-2 bottom-2 h-10">
-                <span :class="'text-red-700 mr-2 bottom-0 text-sm relative nf nf-dev-'+lower(project.language)"></span>
+                <span :class="'mr-2 bottom-0 text-sm relative nf nf-dev-'+lower(project.language)"></span>
                 <img :src="project.owner.avatar_url" alt="avatar" class="w-10 relative bottom-1 rounded-full">
             </div>
-        </div>
+        </a>
     </div>
 </template>
-<script>
+<script lang="ts">
 import axios from "axios";
 export default {
   name: "Projects",
