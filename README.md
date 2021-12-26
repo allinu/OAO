@@ -2,8 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-[![Build Vue](https://github.com/allinu/OAO/actions/workflows/vue-page.yml/badge.svg)](https://github.com/allinu/OAO/actions/workflows/vue-page.yml)
+[![Docker Image CI](https://github.com/allinu/OAO/actions/workflows/docker-build.yml/badge.svg)](https://github.com/allinu/OAO/actions/workflows/docker-build.yml)
 
 自己的前端项目，边学边做吧，这个项目只是前端，后端项目为 [allinu/OVO](https://github.com/allinu/OVO)
 
