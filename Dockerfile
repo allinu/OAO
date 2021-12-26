@@ -1,11 +1,6 @@
-FROM node
-
-WORKDIR /app
-
-COPY . .
-
-RUN yarn
-
-EXPOSE 3000
-
-CMD [ "yarn", "dev" ]
+FROM nginx
+COPY dist/ /usr/share/nginx/html/
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+VOLUME [ "/usr/share/nginx/html/" ]
+VOLUME [ "/etc/nginx/conf.d/" ]
+EXPOSE 80

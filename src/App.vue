@@ -5,13 +5,11 @@
 
 <script lang="ts">
 import navbar from "@/components/navbar.vue";
-import foter from "@/components/vfooter.vue";
 
 export default {
   name: "App",
   components: {
     navbar,
-    foter,
   },
   data() {
     return {};
