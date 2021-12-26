@@ -1,13 +1,13 @@
 <template>
-  <div class="sm:px-8 px-2 pt-2 bg-white border-b-2 border-dashed flex">
+  <div class="sm:px-8 px-2 pt-2 dark:bg-black bg-white border-b-2 border-dashed flex">
     <nav class=" flex flex-row justify-start center -mb-px text-xs text-black font-bold text-center">
       <a v-for="item in navs" :href="item['url']" :key="item.id"
-         class="  sm:mr-8 mr-6 py-3  no-underline border-teal-500  tracking-wide justify-center items-center  text-teal-500  flex  ">
+         class="sm:mr-8 sm:mr-6 mr-4 py-3 dark:text-white no-underline border-teal-500  tracking-wide justify-center items-center  text-teal-500  flex  ">
         <span class=" text-base hover:text-red-300" :class="{'text-red-500': activeNav(item) || item['logo'] }">
           {{ item["name"] }}
         </span>
       </a>
-      <a href="https://github.com/allinu/OAO" class="py-2 absolute no-underline border-teal-500 tracking-wide items-center text-teal-500 right-8">
+      <a href="https://github.com/allinu/OAO" class="py-2 dark:text-white absolute no-underline border-teal-500 tracking-wide items-center text-teal-500 right-8">
         <span class=" text-base hover:text-red-900">
           <i class="nf nf-oct-mark_github text-2xl "></i>
         </span>
@@ -22,11 +22,11 @@ export default {
   data() {
     return {
       navs: [
-        {
-          name: "  ",
-          url: "/",
-          logo: true,
-        },
+        // {
+        //   name: "  ",
+        //   url: "/",
+        //   logo: true,
+        // },
         {
           name: "首页",
           url: "/",

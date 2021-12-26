@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen md:h-screen flex flex-row">
+    <div class="w-screen md:h-screen sm:flex flex-row">
         <div class="bg-blue-900 h-full w-full md:w-4/12 pt-10">
             <form autocomplete="off" @submit.prevent="onSubmit" class="p-5">
                 <div v-for="item in items" :key="item.id" class=" mt-2 text-white">
@@ -11,7 +11,7 @@
                 <button type="submit" @click="submit_data" class="w-full h-8 bg-green-400 rounded mt-2 text-white font-bold">提 交</button>
             </form>
         </div>
-        <form autocomplete="off" @submit.prevent="onSubmit" class="p-10 pt-20 h-full w-full bg-gray-900 text-white flex flex-col justify-center items-center">
+        <form autocomplete="off" @submit.prevent="onSubmit" class="p-10 sm:pt-20 h-full w-full bg-gray-900 text-white flex flex-col justify-center items-center">
             <label for="_username" class="p-4">
                 <h1 class="text-xl">用户名</h1>
                 <input type="text" id="_username"  v-model="_username" class="w-80 h-10 px-2 mt-4 rounded-md text-black">
@@ -21,7 +21,7 @@
                 <button class="w-full h-10 mt-2 rounded-md bg-green-600" @click="submit_query"> 查  询 </button>
                 <button class="w-full h-10 mt-2 rounded-md bg-red-600" @click="submit_delete"> 删  除 </button>
             </div>
-            <img src="../assets/iloli.gif" alt="iloli" class="mx-auto mt-52 absolute bottom-0 right-0">
+            <img src="../assets/iloli.gif" alt="iloli" class="mx-auto mt-52 sm:absolute bottom-0 right-0 visible sm:visible">
         </form>
     </div>
 </template>

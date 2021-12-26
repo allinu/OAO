@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen grid grid-cols-4 gap-4 px-10 pt-20 pb-10">
+    <div class="w-screen h-screen sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 sm:grid gap-4 sm:px-10 pt-20 pb-10">
         <div v-for="item in contents" :key="item.id"  class="relative border-green-900 border-2 h-56 rounded-lg duration-300 text-green-800s p-5 hover:bg-gray-900 hover:text-white m-2">
             <h2 class="font-medium text-xl">
                 <a :href="item.url" class="items-center justify-center card_title">
