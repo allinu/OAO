@@ -52,3 +52,5 @@ jobs:
         docker tag $IMAGE_NAME $IMAGE_NAME:$VERSION
         # 进行 push
         docker push $IMAGE_NAME:$VERSION
+    - name: slack-send
+      uses: slackapi/slack-github-action@v1.16.0

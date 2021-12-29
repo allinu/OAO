@@ -23,10 +23,8 @@ export default {
 }
 .bullet-item-style {
   /* color: #fff; */
-  color: #700;
+  color: rgb(156, 25, 25);
   position: relative;
-  z-index: -99;
-  /* background: #700a; */
   border-radius: 10px;
   padding: 0 20px;
 }
