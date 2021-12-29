@@ -23,9 +23,11 @@ export default {
 }
 .bullet-item-style {
   /* color: #fff; */
-  color: rgb(156, 25, 25);
+  color: rgb(255, 255, 255);
   position: relative;
   border-radius: 10px;
   padding: 0 20px;
+  border:1px solid #fff;
+  background:rgb(0, 0, 0);
 }
 </style>

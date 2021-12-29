@@ -25,9 +25,9 @@ export default {
       contents: [
         {
           id: 1,
-          title: " 签到/查寝（由于IP被BAN 不可用）",
+          title: " 签到/查寝",
           url: "/tools/sign",
-          description: "今日校园的签到/查寝任务自动完成",
+          description: "今日校园的签到/查寝任务自动完成 （由于IP被BAN 不可用）",
         },
         {
           id: 2,
