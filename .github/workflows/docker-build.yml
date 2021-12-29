@@ -10,6 +10,7 @@ on:
 env:
   IMAGE_NAME: liona/oao
   DOCKER_USERNAME: liona
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
 jobs:
 
@@ -18,7 +19,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: act10ns/slack@v1
+      with:
+        status: starting
+        channel: '#workflows'
+        message: Starting Docker Build and Push...
+      if: always()
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Use Node.js 16
       uses: actions/setup-node@v2
       with:
@@ -52,13 +60,10 @@ jobs:
         docker tag $IMAGE_NAME $IMAGE_NAME:$VERSION
         # 进行 push
         docker push $IMAGE_NAME:$VERSION
-    - name: slack-send
-      uses: slackapi/slack-github-action@v1.16.0
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-      with:
-        channel-id: 'repos'  # Slack channel id or user id to post message. https://api.slack.com/methods/chat.postMessage#channels
-        slack-message: 'posting from a github action!'
+    - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#workflows'
+        if: always()
         
