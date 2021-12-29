@@ -59,6 +59,6 @@ jobs:
         SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       with:
-        channel-id: 'CHANNEL_ID'  # Slack channel id or user id to post message. https://api.slack.com/methods/chat.postMessage#channels
+        channel-id: 'repos'  # Slack channel id or user id to post message. https://api.slack.com/methods/chat.postMessage#channels
         slack-message: 'posting from a github action!'
         
