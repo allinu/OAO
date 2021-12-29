@@ -21,9 +21,9 @@ jobs:
     steps:
     - uses: act10ns/slack@v1
       with:
-        status: starting
-        channel: '#workflows'
-        message: Starting Docker Build and Push...
+        status: ${{ github.event.workflow_run.conclusion }}
+        channel: '#actions'
+        config: .github/slack-workflow.yml
       if: always()
     - name: Checkout
       uses: actions/checkout@v2
@@ -62,8 +62,8 @@ jobs:
         docker push $IMAGE_NAME:$VERSION
     - uses: act10ns/slack@v1
       with:
-        status: ${{ job.status }}
-        steps: ${{ toJson(steps) }}
-        channel: '#workflows'
+        status: ${{ github.event.workflow_run.conclusion }}
+        channel: '#actions'
+        config: .github/slack-workflow.yml
       if: always()
       
