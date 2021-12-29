@@ -23,7 +23,6 @@ jobs:
       with:
         status: ${{ job.status }}
         channel: '#workflows'
-        config: .github/slack.yml
       if: always()
     - name: Checkout
       uses: actions/checkout@v2
@@ -64,6 +63,5 @@ jobs:
       with:
         status: ${{ job.status }}
         channel: '#workflows'
-        config: .github/slack.yml
       if: always()
       
