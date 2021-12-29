@@ -54,3 +54,11 @@ jobs:
         docker push $IMAGE_NAME:$VERSION
     - name: slack-send
       uses: slackapi/slack-github-action@v1.16.0
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      with:
+        channel-id: 'CHANNEL_ID'  # Slack channel id or user id to post message. https://api.slack.com/methods/chat.postMessage#channels
+        slack-message: 'posting from a github action!'
+        
