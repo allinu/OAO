@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: act10ns/slack@v1
       with:
-        status: ${{ github.event.workflow_run.conclusion }}
+        status: ${{ job.status }}
         channel: '#workflows'
         config: .github/slack.yml
       if: always()
@@ -62,7 +62,7 @@ jobs:
         docker push $IMAGE_NAME:$VERSION
     - uses: act10ns/slack@v1
       with:
-        status: ${{ github.event.workflow_run.conclusion }}
+        status: ${{ job.status }}
         channel: '#workflows'
         config: .github/slack.yml
       if: always()
