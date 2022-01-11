@@ -6,4 +6,4 @@ import './assets/CustomFonts.css'
 import './assets/nerd-fonts-generated.css'
 
 
-createApp(App).use(router).use(router).mount('#app')
+createApp(App).use(router).mount('#app')

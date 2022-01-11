@@ -2,7 +2,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![Docker Image CI](https://github.com/allinu/OAO/actions/workflows/docker-build.yml/badge.svg)](https://github.com/allinu/OAO/actions/workflows/docker-build.yml)
+[![workflow-run](https://github.com/allinu/OAO/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/allinu/OAO/actions/workflows/workflow.yml)
 
 自己的前端项目，边学边做吧，这个项目只是前端，后端项目为 [allinu/OVO](https://github.com/allinu/OVO)
 
@@ -43,7 +43,7 @@
 
 本项目使用 MIT 协议，项目中使用了其他项目的代码，如果你使用了这些代码，请在此处注明，并附上协议地址，否则请不要使用这些代码。项目中使用了[锤子科技](https://www.smartisan.com/)的字体，实在是太好看了，仅供个人使用，如果涉及到侵权问题，请联系，我会及时处理。
 
-![](https://i.imgur.com/buNOJCC.png)
+<img src="https://i.imgur.com/buNOJCC.png" width=100>
 
 ## Contributors ✨
 
