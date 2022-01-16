@@ -1,6 +1,6 @@
 <template>
-    <div class="w-screen pt-16 pb-5 px-5 grid sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 dark:bg-black dark:text-gray-400 ">
-        <a v-for="project in projects" :href="project.html_url" target="_blank" :key="project.id" class="m-2 duration-300 border-2 border-gray-900 dark:border-gray-300 flex-grow h-64 p-5 rounded-xl relative hover:bg-gray-700 hover:text-white">
+    <div class="w-screen pt-16 pb-5 px-5 grid sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 dark:bg-black dark:text-gray-200 ">
+        <a v-for="project in projects" :href="project.html_url" target="_blank" :key="project.id" class="m-2 duration-300 border-2 border-gray-900 dark:border-gray-300 flex-grow h-64 p-5 rounded-xl relative hover:border-red-600">
             <h2 class="text-xl font-bold">{{project.name}}</h2>
             <hr class="border-2 border-green-600 my-4">
             <p class="mt-5 nb-5">{{ clip(project.description) }}</p>
