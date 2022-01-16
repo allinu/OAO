@@ -38,15 +38,6 @@ const routes = [{
             import ('../views/AutoSign.vue')
     },
     {
-        path: '/jarvis',
-        name: 'Jarvis',
-        meta: {
-            title: '贾维斯'
-        },
-        component: () =>
-            import ('../views/Jarvis.vue')
-    },
-    {
         path: '/love',
         name: 'Love',
         meta: {

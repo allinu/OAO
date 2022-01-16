@@ -44,10 +44,6 @@ export default {
           url: "/tools",
         },
         {
-          name: "贾维斯",
-          url: "/jarvis",
-        },
-        {
           name: "关于",
           url: "/about",
         },
