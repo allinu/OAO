@@ -5,7 +5,7 @@
       class="flex justify-center items-center relative top-64"
       :w="w"
     ></customlogo>
-    <p class=" absolute bottom-0 text-center w-full">备案号：<a class="text-gray-500 cursor-pointer" href="https://beian.miit.gov.cn/">冀ICP备2021010408号-1</a></p>
+    <p class=" absolute bottom-0 text-center w-full"><a class="text-gray-500 cursor-pointer" href="https://beian.miit.gov.cn/">冀ICP备2021010408号</a></p>
   </div>
 </template>
 <script lang="ts">
