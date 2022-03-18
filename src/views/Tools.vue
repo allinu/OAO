@@ -25,15 +25,14 @@ export default {
       contents: [
         {
           id: 1,
-          title: " 签到/查寝",
-          url: "/tools/sign",
-          description: "今日校园的签到/查寝任务自动完成 （由于IP被BAN 不可用）",
-        },
-        {
-          id: 2,
           title: " 打字？",
           url: "https://type.liona.fun/",
           description: "一边打字，一边背单词",
+        },{
+          id: 2,
+          title: " 段落重写",
+          url: "/tools/rewrite",
+          description: "翻译、翻译、翻...",
         }
       ],
     };

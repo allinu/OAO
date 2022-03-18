@@ -29,13 +29,13 @@ const routes = [{
             import ('../views/Tools.vue')
     },
     {
-        path: '/tools/sign',
-        name: 'AutoSign',
+        path: '/tools/rewrite',
+        name: 'ReWrite',
         meta: {
-            title: '自动签到'
+            title: '段落重写'
         },
         component: () =>
-            import ('../views/AutoSign.vue')
+            import ('../views/ReWrite.vue')
     },
     {
         path: '/love',
@@ -54,7 +54,7 @@ const routes = [{
         },
         component: () =>
             import ('../views/About.vue')
-    }
+    },
 ]
 
 const router = createRouter({
