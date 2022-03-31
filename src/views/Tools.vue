@@ -26,7 +26,7 @@ export default {
         {
           id: 1,
           title: " 打字？",
-          url: "https://type.liona.fun/",
+          url: "https://type.allinu.vercel.app/",
           description: "一边打字，一边背单词",
         },{
           id: 2,
