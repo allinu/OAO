@@ -33,7 +33,7 @@ export default {
         },
         {
           name: "博客",
-          url: "https://blog.liona.fun/",
+          url: "https://notion.allinu.vercel.app/",
         },
         {
           name: "项目",
