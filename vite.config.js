@@ -18,7 +18,7 @@ export default defineConfig({
         port: 3000,
         proxy: {
             "/api": {
-                target: "http://liona.opvs.tk:3000",
+                target: "http://121.5.241.108:3000",
                 ws: true,
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ""),
