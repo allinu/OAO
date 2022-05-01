@@ -3,7 +3,7 @@
         <div>
             <h2 class="text-center text-2xl text-green-900">原始段落</h2>
             <textarea class=" h-5/6 w-full hover:border-red-800 p-2 border-2 rounded-xl" name="origin" id="origin" v-model="origin" placeholder="原始段落放这里。。"></textarea>
-            <button type="button" class="w-full h-10 border-2 rounded-xl hover:bg-green-900 hover:text-white hover:border-green-900 border-green-600" @click="getRewriteText">开始重写</button>
+            <button type="button" class="w-full h-10 mt-4 border-2 rounded-xl hover:bg-green-900 hover:text-white hover:border-green-900 border-green-600" @click="getRewriteText">开始重写</button>
         </div>
         <div>
             <h2 class="text-center text-2xl text-green-900">重写结果</h2>
