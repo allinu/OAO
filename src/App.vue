@@ -1,33 +1,16 @@
-<template>
-  <navbar id="navbar" class="w-full fixed z-10"></navbar>
-  <router-view id="main" class="h-full overflow-scroll bg-white dark:bg-black text-black dark:text-white"/>
-</template>
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+import  navbar  from '@/components/navbar/index.vue'
 
-<script lang="ts">
-import navbar from "@/components/navbar.vue";
-
-export default {
-  name: "App",
-  components: {
-    navbar,
-  },
-  data() {
-    return {};
-  },
-};
 </script>
+
+<template>
+  <navbar class="sticky top-0 z-10"></navbar>
+  <RouterView></RouterView>
+</template>
 
 <style>
 * {
   font-family: "NFM", "SCM";
-}
-.bullet-item-style {
-  /* color: #fff; */
-  color: rgb(255, 255, 255);
-  position: relative;
-  border-radius: 10px;
-  padding: 0 20px;
-  border:1px solid #fff;
-  background:rgb(0, 0, 0);
 }
 </style>
